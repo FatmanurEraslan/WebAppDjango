@@ -1,0 +1,14 @@
+{% autoescape off %}
+
+
+Hi {{first_name}} {{last_name}}!
+
+Please use the link below to verify your account.
+
+
+http://{{domain}}{% url 'accounts:email_activation' activation_key=activation_key %}
+
+Best,
+BongCodes Team
+
+{% endautoescape %}
